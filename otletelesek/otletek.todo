@@ -2,7 +2,10 @@ otletek:
 maybe platformer
 2d or 2.5d
 make the background like petrik a building
+<<<<<<< HEAD
 maybe 5 levels
+=======
+>>>>>>> 5a245b67f703c93f98aacb949961ed86e905571f
 maybe 4 levels
 make them harder exponentially, so in the end it should be only trying to do a jump or smtg.
 Legyen 4 szint, minden szint 5 képernyőnyi map, minden szint egyre nehezebb, egyre kissebbek a párkányok.
@@ -17,6 +20,7 @@ minden szintnél a story karakterek mögött ott van az ajtó, de nem tudod megk
 Tűzlépcső: A map legeslegalján van egy ajtó, ami zárva van, be tudsz kopogtatni, verni tudod az ajtót, de zárva marad, az ottani karakter azt mondja, hogy aki valaha bement soha nem jött vissza
 A karakterek úgy beszéljenek, mint az undertale-ben öö ööööö ööö ö öö öö ö ö ööööööö ööö........
 A pálya legtetején van egy monk, aki ad
+<<<<<<< HEAD
 
 
 
@@ -27,8 +31,13 @@ Color invert for 30sec
 Slowness, soreness for 30 sec
 superjump, only at between level 0 and 1, level 1 and 2
 doublejump, only at between level 0 and 1, level 1 and 2
+=======
+>>>>>>> 5a245b67f703c93f98aacb949961ed86e905571f
 
 
+    
+potions:
+direction change for 30sec
 
 
 cahracters:
@@ -38,6 +47,7 @@ canon: On a higher level
 
 
 
+<<<<<<< HEAD
 
 
 eastereggs:
@@ -51,3 +61,6 @@ A válaszokban utalhatnának más játékokra karakterekre a beszélgetések (pl
 
 eastereggs: on dc
 
+=======
+eastereggs: on dc
+>>>>>>> 5a245b67f703c93f98aacb949961ed86e905571f
