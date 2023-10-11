@@ -1,3 +1,4 @@
 # rage-game
 ez egy rage game lesz
-nnbhbv
+# csaapttagok:
+## Csapo kristof, biro richard, mikes krisztian
