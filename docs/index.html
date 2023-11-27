@@ -57,11 +57,12 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the countdown in the element with id="countdown"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the countdown is finished, display a message
         if (distance < 0) {
           clearInterval(countdownTimer);
-          document.getElementById("countdown").innerHTML = "The game has launched!";
-        } else {
-          document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+          document.getElementById("countdown").innerHTML = "Countdown finished";
         }
       }, 1000);
     </script>
