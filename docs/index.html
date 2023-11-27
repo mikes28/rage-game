@@ -34,6 +34,82 @@
     <div class="container">
       <h1>Welcome to the Rage Game!</h1>
       <p>Get ready to unleash your rage in this intense game.</p>
+      <!-- Countdown Timer -->
+      <div id="countdown"></div>
+
+      <script>
+        // Set the date for the game launch
+        var launchDate = new Date("2022-12-31T23:59:59");
+
+        // Update the countdown every 1 second
+        var countdownTimer = setInterval(function() {
+          // Get the current date and time
+          var now = new Date().getTime();
+
+          // Calculate the distance between now and the launch date
+          var distance = launchDate - now;
+
+          // Calculate days, hours, minutes, and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the countdown in the element with id="countdown"
+          document.getElementById("countdown").innerHTML = "The game will launch in: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+          // If the countdown is finished, display a message
+          if (distance < 0) {
+            clearInterval(countdownTimer);
+            document.getElementById("countdown").innerHTML = "The game has launched!";
+          }
+        }, 1000);
+      </script>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2023 Rage Game. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+      
+      <div id="countdown"></div>
+
+      <script>
+        // Set the date for 1 month from now
+        var countDownDate = new Date();
+        countDownDate.setMonth(countDownDate.getMonth() + 1);
+
+        // Update the countdown every 1 second
+        var countdownTimer = setInterval(function() {
+          // Get the current date and time
+          var now = new Date().getTime();
+
+          // Calculate the distance between now and the countdown date
+          var distance = countDownDate - now;
+
+          // Calculate days, hours, minutes, and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the countdown in the element with id="countdown"
+          document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+          // If the countdown is finished, display a message
+          if (distance < 0) {
+            clearInterval(countdownTimer);
+            document.getElementById("countdown").innerHTML = "Countdown finished";
+          }
+        }, 1000);
+      </script>
     </div>
   </main>
 
