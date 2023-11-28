@@ -8,5 +8,12 @@
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_q1gt2")]
 position = Vector2(147, 527)
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(3, 0)
+rotation = -3.14159
+scale = Vector2(-442.49, -337.208)
+zoom = Vector2(1.2, 1.2)
+metadata/_edit_group_ = true
+
 [node name="TileMap" parent="." instance=ExtResource("2_1lv7g")]
 position = Vector2(-114, 36)
