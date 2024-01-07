@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://d0wmc6wfat358"]
-
-[ext_resource type="Script" path="res://scripts/water.gd" id="1_mnuqq"]
-
-[node name="water" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-script = ExtResource("1_mnuqq")
